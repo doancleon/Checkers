@@ -25,12 +25,13 @@ class StudentAI():
         #self.color = 1 means AI is black
         #self.color = 2 mean AI is white
 
-        # not sure what bottom code does
+        #############################
         if len(move) != 0:
             self.board.make_move(move, self.opponent[self.color])
         else:
             self.color = 1
         #############################
+
         temp = self.board.get_all_possible_moves(self.color)
         moves = []
         for pieces in range(len(temp)):
